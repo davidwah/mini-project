@@ -25,6 +25,15 @@ description: |
 # The containers and resources metadata apply to Kubernetes charms only.
 # Remove them if not required.
 
+# Select machine to deploy
+machines:
+  '0':
+    series: jammy
+    constraints: tags=httpbin
+  '1':
+    series: jammy
+    constraints: tags=httpbin
+
 # Your workload’s containers.
 containers:
   httpbin:
